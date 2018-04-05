@@ -3,7 +3,7 @@ const webpack = require('webpack');
 
 module.exports = {
 	entry: './app/index.jsx',
-	output: { path: __dirname, filename: 'dist/bundle.js' },
+	output: { path: __dirname, filename: 'dist/bundle.js', publicPath: '/assets/' },
 	module: {
 		loaders: [
 			{
